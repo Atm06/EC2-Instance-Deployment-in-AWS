@@ -1,0 +1,5 @@
+
+aws ec2 create-subnet --vpc-id vpc-03317c593410a9e98 --cidr-block 10.0.1.0/24
+
+
+aws ec2 create-subnet --vpc-id vpc-03317c593410a9e98 --cidr-block 10.0.0.0/24

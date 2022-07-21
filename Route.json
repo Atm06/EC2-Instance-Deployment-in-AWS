@@ -1,0 +1,4 @@
+aws ec2 create-route-table --vpc-id vpc-03317c593410a9e98
+
+aws ec2 create-route --route-table-id rtb-0535b7de40102a9c4 
+              --destination-cidr-block 0.0.0.0/0 --gateway-id igw-098f1d9de49e99d62

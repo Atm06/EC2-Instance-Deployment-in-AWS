@@ -1,0 +1,5 @@
+aws ec2 create-security-group --group-name SG-1 --description "Securitygrp-1" --vpc-id vpc-03317c593410a9e98
+
+ //"GroupId": "sg-0b5c0acdd24aa7914"//
+
+aws ec2 authorize-security-group-ingress --group-id sg-0b5c0acdd24aa7914 --protocol tcp --port 22 --cidr 0.0.0.0/0

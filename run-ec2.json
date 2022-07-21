@@ -1,0 +1,4 @@
+# At this step, you will need an AMI(Amazon Machine Image) image ID. For this login to your AWS Console and choose any AMI of your type. Copy the image id and replace it here in place of <ami-id>.  Also use your key pair name, security group id, and subnet id at the correct place in the above command. Also, make a note of the InstanceId.
+
+
+aws ec2 run-instances --image-id ami-08df646e18b182346 --count 1 --instance-type t2.nano --key-name Web-server-key --security-group-ids sg-0b5c0acdd24aa7914 --subnet-id subnet-03aa403dc927cf889

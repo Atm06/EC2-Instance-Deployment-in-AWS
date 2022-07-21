@@ -3,4 +3,4 @@ To check whether route table and subnets are created and assigned successfully u
 aws ec2 describe-route-tables --route-table-id rtb-0535b7de40102a9c4 
 
 aws ec2 describe-subnets --filters "Name=vpc-id,Values=vpc-03317c593410a9e98"
-                         --query "Subnets[*].{ID:subnet-03aa403dc927cf889,CIDR:10.0.1.0/24}"
+                         --query "Subnets[*].{ID:SubnetId,CIDR:CidrBlock}"

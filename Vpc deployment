@@ -1,0 +1,29 @@
+aws configure
+aws ec2 create-vpc --cidr-block 10.0.0.0/16
+
+Here the CIDR block I have taken is 10.0.0.0/16, you can change it as per your need. After running this command following output will be given in a JSON format. 
+Note the vpcId .
+
+
+C:\Windows\system32>aws ec2 create-vpc --cidr-block 10.0.0.0/16
+{
+    "Vpc": {
+        "CidrBlock": "10.0.0.0/16",
+        "DhcpOptionsId": "dopt-0109a4fb0f9f60085",
+        "State": "pending",
+        "VpcId": "vpc-03317c593410a9e98",
+        "OwnerId": "739767204060",
+        "InstanceTenancy": "default",
+        "Ipv6CidrBlockAssociationSet": [],
+        "CidrBlockAssociationSet": [
+            {
+                "AssociationId": "vpc-cidr-assoc-01cbef355ab230406",
+                "CidrBlock": "10.0.0.0/16",
+                "CidrBlockState": {
+                    "State": "associated"
+                }
+            }
+        ],
+        "IsDefault": false
+    }
+}
